@@ -134,19 +134,19 @@ const ContactPage = () => {
                 <ContactInfoItem 
                   icon={MapPin} 
                   title="Our Boutique" 
-                  lines={['123 Fashion Avenue, Suite 101', 'New York, NY 10001']} 
+                  lines={['934/21  JC3858 , NEAR JHAJJAR CHUNGI, ROHTAK, HARYANA-124001 INDIA']} 
                 />
                 <div className="my-8 border-t border-stone-100"></div>
                 <ContactInfoItem 
                   icon={Phone} 
                   title="Phone & WhatsApp" 
-                  lines={['(123) 456-7890', '(098) 765-4321']} 
+                  lines={['8396965050', '7206769709']} 
                 />
                 <div className="my-8 border-t border-stone-100"></div>
                 <ContactInfoItem 
                   icon={Mail} 
                   title="Email Us" 
-                  lines={['info@Rरिwaaz.com', 'custom@Rरिwaaz.com']} 
+                  lines={['r.riwaaz1@gmail.com']} 
                 />
                 <div className="my-8 border-t border-stone-100"></div>
                 <ContactInfoItem 
@@ -227,7 +227,7 @@ const ContactPage = () => {
           <div className="h-96 lg:h-auto bg-stone-200 relative grayscale hover:grayscale-0 transition-all duration-700">
             <iframe
               title="R Riwaaz Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98513018459418!3d40.74881717932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1629813045678!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3493.642510955748!2d76.58486477555157!3d28.879249425530933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d84531d2e91e1%3A0xf0520a67d2c940c8!2sJhajjar%20Chungi%2C%20Rohtak%2C%20Haryana%20124001!5e0!3m2!1sen!2sin!4v1766045572240!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

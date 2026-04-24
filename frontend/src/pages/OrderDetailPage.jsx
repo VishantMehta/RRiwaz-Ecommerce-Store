@@ -97,15 +97,15 @@ const OrderStatusTracker = ({ currentStatus }) => {
             <div className="relative flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-0">
                 {/* Connecting Line (Desktop) */}
                 <div className="hidden md:block absolute top-4 left-0 w-full h-[2px] bg-stone-100 -z-10"></div>
-                <div 
-                    className="hidden md:block absolute top-4 left-0 h-[2px] bg-stone-900 -z-10 transition-all duration-700 ease-out" 
+                <div
+                    className="hidden md:block absolute top-4 left-0 h-[2px] bg-stone-900 -z-10 transition-all duration-700 ease-out"
                     style={{ width: `${(currentIndex / (ORDER_STATUSES.length - 1)) * 100}%` }}
                 ></div>
 
                 {ORDER_STATUSES.map((status, index) => {
                     const isActive = index <= currentIndex;
                     const isCurrent = index === currentIndex;
-                    
+
                     return (
                         <div key={status} className="flex md:flex-col items-center gap-4 md:gap-4 relative group w-full md:w-auto">
                             {/* Connecting Line (Mobile) */}
@@ -113,13 +113,13 @@ const OrderStatusTracker = ({ currentStatus }) => {
                                 <div className={`md:hidden absolute left-4 top-8 w-[2px] h-full ${isActive && index < currentIndex ? 'bg-stone-900' : 'bg-stone-100'} -z-10 ml-[-1px]`}></div>
                             )}
 
-                            <div 
+                            <div
                                 className={`w-8 h-8 rounded-full flex items-center justify-center border-2 transition-all duration-500 z-10 
                                 ${isActive ? 'bg-stone-900 border-stone-900 text-white' : 'bg-white border-stone-200 text-stone-300'}`}
                             >
                                 {isActive ? <Check size={14} /> : <div className="w-2 h-2 rounded-full bg-stone-200" />}
                             </div>
-                            
+
                             <div className={`text-left md:text-center transition-colors duration-300 ${isCurrent ? 'opacity-100' : isActive ? 'opacity-70' : 'opacity-40'}`}>
                                 <p className="text-xs font-bold uppercase tracking-widest text-stone-900">
                                     {status.replace(' Confirmation', '')}
@@ -159,7 +159,7 @@ const OrderDetailPage = () => {
 
     const handleWhatsAppConfirm = () => {
         if (!order) return;
-        const ownerPhoneNumber = '917463997367';
+        const ownerPhoneNumber = '918708767694';
         const message = `Hi, I've just placed Order #${order._id}. I'd like to confirm the details and payment.`;
         const encodedMessage = encodeURIComponent(message);
         const whatsappUrl = `https://wa.me/${ownerPhoneNumber}?text=${encodedMessage}`;
@@ -184,13 +184,13 @@ const OrderDetailPage = () => {
                     >
                         {/* Header */}
                         <header className="mb-10">
-                            <Link 
-                                to="/my-orders" 
+                            <Link
+                                to="/my-orders"
                                 className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-stone-500 hover:text-amber-700 mb-6 transition-colors"
                             >
                                 <ArrowLeft size={14} /> Back to History
                             </Link>
-                            
+
                             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
                                 <div>
                                     <h1 className="font-marcellus text-3xl md:text-4xl text-stone-900 mb-2">
@@ -200,7 +200,7 @@ const OrderDetailPage = () => {
                                         <Calendar size={14} /> Placed on {formatDate(order.createdAt)}
                                     </p>
                                 </div>
-                                
+
                                 {order.orderStatus === 'Pending Confirmation' && (
                                     <button
                                         onClick={handleWhatsAppConfirm}
@@ -218,14 +218,14 @@ const OrderDetailPage = () => {
                         </div>
 
                         <main className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                            
+
                             {/* Left Column: Items */}
                             <div className="lg:col-span-2 space-y-8">
                                 <div className="bg-white p-6 md:p-8 rounded-sm border border-stone-100 shadow-sm">
                                     <h2 className="font-marcellus text-xl text-stone-900 mb-6 flex items-center gap-3">
                                         <ShoppingBag size={20} className="text-amber-700" /> Collection
                                     </h2>
-                                    
+
                                     <div className="space-y-6">
                                         {order.orderItems.map(item => (
                                             <div key={item._id || item.product} className="flex gap-6 pb-6 border-b border-stone-100 last:border-0 last:pb-0">
@@ -237,7 +237,7 @@ const OrderDetailPage = () => {
                                                         <h3 className="font-marcellus text-lg text-stone-900">{item.name}</h3>
                                                         <p className="font-bold text-stone-900">₹{Number(item.price || 0).toFixed(2)}</p>
                                                     </div>
-                                                    
+
                                                     {item.selectedCustomizations && Object.keys(item.selectedCustomizations).length > 0 && (
                                                         <div className="mt-2 text-xs text-stone-500 bg-stone-50 p-3 rounded-sm">
                                                             {Object.entries(item.selectedCustomizations).map(([key, value]) => (

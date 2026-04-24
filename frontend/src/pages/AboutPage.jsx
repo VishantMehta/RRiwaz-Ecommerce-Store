@@ -2,14 +2,14 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { 
-  Scissors, 
-  Feather, 
-  Gem, 
-  ShoppingBag, 
-  Gift, 
-  Spool, 
-  Quote 
+import {
+  Scissors,
+  Feather,
+  Gem,
+  ShoppingBag,
+  Gift,
+  Spool,
+  Quote
 } from 'lucide-react';
 
 // Importing your R Rivaaz assets
@@ -26,8 +26,8 @@ const StatBox = ({ number, label }) => (
 );
 
 const ValueCard = ({ icon: Icon, title, description, delay }) => (
-  <div 
-    data-aos="fade-up" 
+  <div
+    data-aos="fade-up"
     data-aos-delay={delay}
     className="text-center p-8 bg-white border border-stone-100 shadow-sm hover:shadow-lg transition-shadow duration-300"
   >
@@ -70,7 +70,7 @@ const AboutPage = () => {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            
+
             {/* Image Side */}
             <div data-aos="fade-right" className="relative order-2 md:order-1">
               <div className="absolute inset-0 border border-amber-700/30 translate-x-4 translate-y-4 z-0"></div>
@@ -80,7 +80,7 @@ const AboutPage = () => {
                 className="w-full h-[500px] object-cover relative z-10 shadow-xl"
               />
               <div className="absolute -bottom-8 -right-8 bg-white p-6 shadow-xl z-20 max-w-[200px] border-t-4 border-amber-700 hidden md:block">
-                <p className="font-marcellus text-3xl text-stone-900 mb-1">5+</p>
+                <p className="font-marcellus text-3xl text-stone-900 mb-1">2+</p>
                 <p className="text-xs uppercase tracking-widest text-stone-500">Years of Heritage & Excellence</p>
               </div>
             </div>
@@ -92,17 +92,17 @@ const AboutPage = () => {
                 Weaving Tradition into <span className="italic font-light text-stone-500">Modern Grace</span>
               </h1>
               <p className="text-stone-600 mb-6 leading-relaxed text-lg font-light">
-                At <strong>Rरिwaaz</strong>, we believe every garment tells a story. 
-                We blend the rich heritage of Indian craftsmanship with contemporary silhouettes 
-                to create ensembles that celebrate the modern woman. 
+                At <strong>Rरिwaaz</strong>, we believe every garment tells a story.
+                We blend the rich heritage of Indian craftsmanship with contemporary silhouettes
+                to create ensembles that celebrate the modern woman.
               </p>
               <p className="text-stone-600 mb-10 leading-relaxed text-lg font-light">
-                From the royal drape of a Kanjivaram Saree to the intricate Zardosi of a Bridal Lehenga, 
+                From the royal drape of a Kanjivaram Saree to the intricate Zardosi of a Bridal Lehenga,
                 we craft art you can wear.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-8 mt-8 border-t border-stone-200 pt-8">
-                <StatBox number="5000+" label="Happy Clients" />
+                <StatBox number="200+" label="Happy Clients" />
                 <StatBox number="100%" label="Handcrafted" />
               </div>
             </div>
@@ -120,21 +120,21 @@ const AboutPage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ValueCard 
-              icon={Gem} 
-              title="Intricate Karigari" 
+            <ValueCard
+              icon={Gem}
+              title="Intricate Karigari"
               description="Our master artisans spend hours perfecting every bead, thread, and sequin to ensure your outfit shines with authenticity."
               delay="100"
             />
-            <ValueCard 
-              icon={Feather} 
-              title="Authentic Fabrics" 
+            <ValueCard
+              icon={Feather}
+              title="Authentic Fabrics"
               description="We source the finest silks, georgettes, and organzas directly from weavers across the country, ensuring pure luxury."
               delay="200"
             />
-            <ValueCard 
-              icon={Scissors} 
-              title="Custom Fitting" 
+            <ValueCard
+              icon={Scissors}
+              title="Custom Fitting"
               description="Every body is unique. We ensure your Lehengas and Suits are tailored to your exact measurements for a flawless fit."
               delay="300"
             />
@@ -145,18 +145,18 @@ const AboutPage = () => {
       {/* --- Meet the Designers Section --- */}
       <div className="py-24 bg-[#FDFBF7]">
         <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          
+
           <div data-aos="fade-right" className="order-2 md:order-1">
             <h2 className="font-marcellus text-4xl md:text-5xl text-stone-900 mb-6">
               Designed for the <br /> <span className="text-amber-800">Royal in You</span>
             </h2>
             <p className="text-stone-600 leading-relaxed mb-6 font-light text-lg">
-              At Rरिwaaz, fashion is an emotion. Behind every collection is a dedicated team of designers 
-              and <em>kaarigars</em> (artisans) who breathe life into fabric. We honor the legacy of Indian textiles 
+              At Rरिwaaz, fashion is an emotion. Behind every collection is a dedicated team of designers
+              and <em>kaarigars</em> (artisans) who breathe life into fabric. We honor the legacy of Indian textiles
               while innovating with cuts and colors that appeal to the contemporary woman.
             </p>
             <p className="text-stone-600 leading-relaxed mb-8 font-light text-lg">
-              Whether it's the heavy Zardosi work for a bride or a breezy Chikankari Kurti for a summer lunch, 
+              Whether it's the heavy Zardosi work for a bride or a breezy Chikankari Kurti for a summer lunch,
               precision is our promise. We don't just make clothes; we create heirlooms.
             </p>
             <Link
@@ -168,7 +168,7 @@ const AboutPage = () => {
           </div>
 
           <div data-aos="zoom-in" className="flex justify-center order-1 md:order-2 relative">
-             <div className="absolute inset-0 bg-stone-900/5 translate-x-4 translate-y-4"></div>
+            <div className="absolute inset-0 bg-stone-900/5 translate-x-4 translate-y-4"></div>
             <img
               src={shadi2}
               alt="Artisan working on embroidery"
@@ -183,13 +183,13 @@ const AboutPage = () => {
       <div className="bg-white py-24 border-t border-stone-100">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12">
-             <div data-aos="fade-right">
-                <span className="text-amber-700 font-bold tracking-[0.2em] text-xs uppercase mb-2 block">What We Offer</span>
-                <h2 className="font-marcellus text-4xl text-stone-900">Collections & Services</h2>
-             </div>
-             <p className="text-stone-500 max-w-md text-right font-light mt-4 md:mt-0" data-aos="fade-left">
-                From bridal trousseaus to everyday ethnic chic, we cover all your fashion needs.
-             </p>
+            <div data-aos="fade-right">
+              <span className="text-amber-700 font-bold tracking-[0.2em] text-xs uppercase mb-2 block">What We Offer</span>
+              <h2 className="font-marcellus text-4xl text-stone-900">Collections & Services</h2>
+            </div>
+            <p className="text-stone-500 max-w-md text-right font-light mt-4 md:mt-0" data-aos="fade-left">
+              From bridal trousseaus to everyday ethnic chic, we cover all your fashion needs.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up">
@@ -234,7 +234,7 @@ const AboutPage = () => {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-16" data-aos="fade-up">
-             <Quote size={40} className="text-amber-700/50 mx-auto mb-6" />
+            <Quote size={40} className="text-amber-700/50 mx-auto mb-6" />
             <h2 className="font-marcellus text-4xl text-white mb-4">Client Love</h2>
             <p className="text-stone-400 font-light">Stories from women who chose Rरिwaaz.</p>
           </div>

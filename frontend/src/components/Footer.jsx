@@ -82,12 +82,12 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-6">
             <div className="flex flex-col md:flex-row items-center gap-4 text-xs text-stone-500 font-light">
-               <p>&copy; 2025 Rरिwaaz. All Rights Reserved.</p>
-               <span className="hidden md:block w-1 h-1 bg-stone-700 rounded-full"></span>
+               <p>&copy; 2023 Rरिwaaz. All Rights Reserved.</p>
+               {/* <span className="hidden md:block w-1 h-1 bg-stone-700 rounded-full"></span> */}
                {/* Styling the Developer Credit */}
-               <p className="group">
-                 Designed & Developed by <span className="text-stone-300 group-hover:text-amber-500 transition-colors cursor-default font-medium">Tabish & Vishant</span>
-               </p>
+               {/* <p className="group">
+                 Designed & Developed by <span className="text-stone-300 group-hover:text-amber-500 transition-colors cursor-default font-medium">Himani</span>
+               </p> */}
             </div>
 
             <div className="flex space-x-4">
