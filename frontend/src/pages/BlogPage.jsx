@@ -11,7 +11,7 @@ const featuredPost = {
   author: 'Rivaaz Editorial',
   date: 'June 12, 2025',
   readTime: '6 min read',
-  image: 'https://images.unsplash.com/photo-1610189352649-c2b7e63a9d8c?w=1200&q=80&fit=crop',
+  image: 'https://houseofpanchhi.com/cdn/shop/articles/How_to_Choose_the_Perfect_Lehenga_Choli_for_a_Wedding_Function_720x.webp?v=1776935058',
 };
 
 const posts = [
@@ -68,7 +68,7 @@ const posts = [
     author: 'Rivaaz Editorial',
     date: 'March 22, 2025',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1594938298603-b8968c1a7f3e?w=800&q=80&fit=crop',
+    image: 'https://www.livabybirlacellulose.com/uploads/uploadimages/1ca1b963e37942b01a86ab840ba1ae13.jpg',
   },
 ];
 
