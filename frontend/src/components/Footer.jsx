@@ -17,7 +17,6 @@ const InstagramIcon = () => <svg className="w-5 h-5" fill="currentColor" viewBox
 
 const Footer = () => {
   return (
-    // Changed to a premium Dark Stone background
     <footer className="bg-[#1c1c1c] text-stone-300 font-montserrat border-t border-stone-800">
       <div className="container mx-auto pt-20 pb-12 px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
@@ -31,7 +30,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Shop Column - Updated links for Women's Wear */}
+          {/* Collections Column */}
           <div>
             <h4 className="font-marcellus text-lg text-white mb-6">Collections</h4>
             <div className="flex flex-col space-y-3 text-sm font-light">
@@ -43,7 +42,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Company Column */}
+          {/* Customer Care Column */}
           <div>
             <h4 className="font-marcellus text-lg text-white mb-6">Customer Care</h4>
             <div className="flex flex-col space-y-3 text-sm font-light">
@@ -51,6 +50,20 @@ const Footer = () => {
               <Link to="/contact" className="hover:text-amber-500 hover:translate-x-1 transition-all duration-300 w-fit">Contact Us</Link>
               <Link to="/shipping" className="hover:text-amber-500 hover:translate-x-1 transition-all duration-300 w-fit">Shipping & Returns</Link>
               <Link to="/appointments" className="hover:text-amber-500 hover:translate-x-1 transition-all duration-300 w-fit">Book Bridal Appointment</Link>
+              {/* Divider */}
+              <div className="w-8 h-px bg-stone-700 my-1"></div>
+              <Link to="/faq" className="hover:text-amber-500 hover:translate-x-1 transition-all duration-300 w-fit flex items-center gap-2">
+                <svg className="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                FAQs
+              </Link>
+              <Link to="/blog" className="hover:text-amber-500 hover:translate-x-1 transition-all duration-300 w-fit flex items-center gap-2">
+                <svg className="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                The Rivaaz Journal
+              </Link>
             </div>
           </div>
 
@@ -81,20 +94,15 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-6">
-            <div className="flex flex-col md:flex-row items-center gap-4 text-xs text-stone-500 font-light">
-               <p>&copy; 2023 Rरिwaaz. All Rights Reserved.</p>
-               {/* <span className="hidden md:block w-1 h-1 bg-stone-700 rounded-full"></span> */}
-               {/* Styling the Developer Credit */}
-               {/* <p className="group">
-                 Designed & Developed by <span className="text-stone-300 group-hover:text-amber-500 transition-colors cursor-default font-medium">Himani</span>
-               </p> */}
-            </div>
+          <div className="flex flex-col md:flex-row items-center gap-4 text-xs text-stone-500 font-light">
+            <p>&copy; 2023 Rरिwaaz. All Rights Reserved.</p>
+          </div>
 
-            <div className="flex space-x-4">
-               <SocialIcon href="#"><FacebookIcon /></SocialIcon>
-               <SocialIcon href="#"><TwitterIcon /></SocialIcon>
-               <SocialIcon href="https://www.instagram.com/Rरिwaaz?igsh=MW42NThrcmQ5bDRocw=="><InstagramIcon /></SocialIcon>
-            </div>
+          <div className="flex space-x-4">
+            <SocialIcon href="#"><FacebookIcon /></SocialIcon>
+            <SocialIcon href="#"><TwitterIcon /></SocialIcon>
+            <SocialIcon href="https://www.instagram.com/Rरिwaaz?igsh=MW42NThrcmQ5bDRocw=="><InstagramIcon /></SocialIcon>
+          </div>
         </div>
       </div>
     </footer>
