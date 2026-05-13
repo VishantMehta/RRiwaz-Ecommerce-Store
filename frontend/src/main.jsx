@@ -28,8 +28,10 @@ import AboutPage from './pages/AboutPage';
 import AdminUserListPage from './pages/AdminUserListPage';
 import ContactPage from './pages/ContactPage';
 import MyAddresses from './pages/MyAddresses';
-import MyWishlist from './pages/MyWishlist'; // Add this import
+import MyWishlist from './pages/MyWishlist';
 import DevelopersPage from './pages/DevelopersPage';
+import BlogPage from './pages/BlogPage';
+import FAQPage from './pages/FAQPage';
 
 // Error Boundary wrapper for routes
 const ErrorBoundaryWrapper = ({ children }) => (
@@ -70,6 +72,8 @@ const router = createBrowserRouter([
       { path: 'about', element: <ErrorBoundaryWrapper><AboutPage /></ErrorBoundaryWrapper> },
       { path: 'contact', element: <ErrorBoundaryWrapper><ContactPage /></ErrorBoundaryWrapper> },
       { path: 'developers', element: <ErrorBoundaryWrapper><DevelopersPage /></ErrorBoundaryWrapper> },
+      { path: 'blog', element: <ErrorBoundaryWrapper><BlogPage /></ErrorBoundaryWrapper> },
+      { path: 'faq', element: <ErrorBoundaryWrapper><FAQPage /></ErrorBoundaryWrapper> },
 
       // --- Private Routes (for logged-in users) ---
       {
@@ -81,7 +85,7 @@ const router = createBrowserRouter([
           { path: 'my-orders', element: <ErrorBoundaryWrapper><MyOrdersPage /></ErrorBoundaryWrapper> },
           { path: 'orders/:id', element: <ErrorBoundaryWrapper><OrderDetailPage /></ErrorBoundaryWrapper> },
           { path: 'my-addresses', element: <ErrorBoundaryWrapper><MyAddresses /></ErrorBoundaryWrapper> },
-          { path: 'wishlist', element: <ErrorBoundaryWrapper><MyWishlist /></ErrorBoundaryWrapper> }, // Add wishlist route
+          { path: 'wishlist', element: <ErrorBoundaryWrapper><MyWishlist /></ErrorBoundaryWrapper> },
         ],
       },
 
